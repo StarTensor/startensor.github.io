@@ -1,0 +1,81 @@
+@font-face {
+    font-family: SourceHanSansSC;
+    src: url("/SourceHanSansSC-Regular-2.otf");
+}
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: SourceHanSansSC;
+}
+#l {
+    height: 100vh;
+    float: left;
+    font-size: 14px;
+    line-height: 32px;
+    background-color: rgb(245, 245, 245);
+}
+#l0 {
+    height: 32px;
+    color: rgb(127, 63, 255);
+    background-color: rgb(127, 63, 255, 0.15);
+}
+#l0l {
+    width: 20px;
+    height: 20px;
+    margin: 6px;
+    float: left;
+    border-radius: 3px;
+}
+#l0r {
+    font-weight: bold;
+    float: left;
+}
+#r {
+    height: 100vh;
+    float: left;
+}
+#rt1 {
+    height: 16px;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+#rt2 {
+    height: 192px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+#rt3 {
+    margin-left: 96px;
+    width: 64px;
+    height: 64px;
+    margin-top: -32px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 2;
+}
+#rb {
+    height: calc(100vh - 224px);
+    margin-left: 96px;
+    margin-right: 96px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+#rb::-webkit-scrollbar {
+    display: none;
+}
+#rb1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+#rb2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+#rb3 {
+    width: 384px;
+}
