@@ -37,10 +37,27 @@ body {
     float: left;
 }
 #rt1 {
+    height: 32px;
+    background-color: rgb(255, 255, 255);
+}
+#rt11 {
+    width: 16px;
     height: 16px;
     padding: 8px;
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    float: left;
+}
+#rt12 {
+    width: 20px;
+    height: 20px;
+    margin: 6px;
+    float: left;
+    border-radius: 3px;
+}
+#rt13 {
+    font-size: 14px;
+    line-height: 32px;
+    float: left;
 }
 #rt2 {
     height: 192px;
@@ -75,7 +92,4 @@ body {
 #rb2 {
     font-size: 20px;
     font-weight: bold;
-}
-#rb3 {
-    width: 384px;
 }
