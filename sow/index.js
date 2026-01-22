@@ -20,7 +20,7 @@ function rt11() {
         window.document.getElementById("rt1").style.width = "calc(100vw - 260px)";
         window.document.getElementById("rt2").style.width = "calc(100vw - 260px)";
         window.document.getElementById("rb").style.width = "calc(100vw - 452px)";
-        window.document.getElementById("rb3").width = "min(384px, calc(100vw - 192px))";
+        window.document.getElementById("rb3").width = "min(384px, calc(100vw - 452px))";
     } else {
         lDisplay = false;
         window.document.getElementById("l").style.display = "none";
