@@ -58,6 +58,26 @@ body {
     font-size: 14px;
     line-height: 32px;
     float: left;
+    color: rgb(0, 0, 0);
+}
+#rt14 {
+    font-size: 14px;
+    line-height: 32px;
+    float: left;
+    color: rgb(191, 191, 191);
+}
+#rt15 {
+    width: 20px;
+    height: 20px;
+    margin: 6px;
+    float: left;
+    border-radius: 3px;
+}
+#rt16 {
+    font-size: 14px;
+    line-height: 32px;
+    float: left;
+    color: rgb(0, 0, 0);
 }
 #rt2 {
     height: 192px;
