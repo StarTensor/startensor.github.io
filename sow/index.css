@@ -1,6 +1,6 @@
 @font-face {
     font-family: SourceHanSansSC;
-    src: url("../SourceHanSansSC-Regular-2.otf");
+    src: url("/SourceHanSansSC-Regular-2.otf");
 }
 body {
     margin: 0;
@@ -70,18 +70,6 @@ body {
     float: left;
     border-radius: 3px;
 }
-#rt12:link {
-    background-color: rgb(255, 255, 255);
-}
-#rt12:visited {
-    background-color: rgb(255, 255, 255);
-}
-#rt12:hover {
-    background-color: rgb(240, 240, 240);
-}
-#rt12:active {
-    background-color: rgb(240, 240, 240);
-}
 #rt12l {
     width: 20px;
     height: 20px;
@@ -146,7 +134,7 @@ body {
     z-index: 1;
 }
 #rt3 {
-    margin-left: 32px;
+    margin-left: 40px;
     width: 64px;
     height: 64px;
     margin-top: -32px;
@@ -166,11 +154,71 @@ body {
 #rb::-webkit-scrollbar {
     display: none;
 }
-#rb1 {
+#rb0 {
+    margin-left: 8px;
     font-size: 32px;
     font-weight: bold;
 }
-#rb2 {
+#rb1 {
+    width: 384px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 3px;
+    outline: solid 1px rgb(230, 230, 230);
+}
+#rb10 {
     font-size: 20px;
     font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+#rb11 {
+    width: 384px;
+}
+#rb12 {
+    width: 384px;
+    text-align: center;
+}
+#rb12 p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#rb121 {
+    width: 128px;
+    float: left;
+}
+#rb121t {
+    font-size: 14px;
+    color: rgb(127, 127, 127);
+}
+#rb121b {
+    font-size: 32px;
+    color: rgb(63, 127, 255);
+}
+#rb122 {
+    width: 128px;
+    float: left;
+}
+#rb122t {
+    font-size: 14px;
+    color: rgb(127, 127, 127);
+}
+#rb122b {
+    font-size: 32px;
+    color: rgb(127, 127, 127);
+}
+#rb123 {
+    width: 128px;
+    float: left;
+}
+#rb123t {
+    font-size: 14px;
+    color: rgb(127, 127, 127);
+}
+#rb123b {
+    font-size: 32px;
+    color: rgb(255, 63, 63);
+}
+#rb124 {
+    height: 66px;
 }

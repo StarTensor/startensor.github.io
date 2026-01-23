@@ -1,5 +1,5 @@
 window.onload = function() {
-    window.document.getElementById("rb3").src = "https://api.mcstatus.io/v2/widget/java/nbc.rainplay.cn:25970?dark=true&rounded=true";
+    window.document.getElementById("rb11").src = "https://api.mcstatus.io/v2/widget/java/nbc.rainplay.cn:25970?dark=true&rounded=true";
 }
 
 let lDisplay = false;
@@ -14,7 +14,6 @@ function rt11() {
         window.document.getElementById("rt1").style.width = "calc(100vw - 260px)";
         window.document.getElementById("rt2").style.width = "calc(100vw - 260px)";
         window.document.getElementById("rb").style.width = "calc(100vw - 324px)";
-        window.document.getElementById("rb3").style.width = "min(384px, calc(100vw - 324px))";
     } else {
         lDisplay = false;
         window.document.getElementById("l").style.display = "none";
@@ -22,6 +21,5 @@ function rt11() {
         window.document.getElementById("rt1").style.width = "100vw";
         window.document.getElementById("rt2").style.width = "100vw";
         window.document.getElementById("rb").style.width = "calc(100vw - 64px)";
-        window.document.getElementById("rb3").style.width = "min(384px, calc(100vw - 64px))";
     }
 }
