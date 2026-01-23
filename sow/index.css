@@ -1,6 +1,6 @@
 @font-face {
     font-family: SourceHanSansSC;
-    src: url("/SourceHanSansSC-Regular-2.otf");
+    src: url("../SourceHanSansSC-Regular-2.otf");
 }
 body {
     margin: 0;
@@ -43,42 +43,98 @@ body {
 #rt11 {
     width: 16px;
     height: 16px;
-    padding: 8px;
+    padding: 4px;
+    border-radius: 3px;
+    margin: 4px;
     color: rgb(0, 0, 0);
     float: left;
 }
+#rt11:link {
+    background-color: rgb(255, 255, 255);
+}
+#rt11:visited {
+    background-color: rgb(255, 255, 255);
+}
+#rt11:hover {
+    background-color: rgb(240, 240, 240);
+}
+#rt11:active {
+    background-color: rgb(240, 240, 240);
+}
 #rt12 {
-    width: 20px;
-    height: 20px;
-    margin: 6px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
     float: left;
     border-radius: 3px;
 }
-#rt13 {
+#rt12:link {
+    background-color: rgb(255, 255, 255);
+}
+#rt12:visited {
+    background-color: rgb(255, 255, 255);
+}
+#rt12:hover {
+    background-color: rgb(240, 240, 240);
+}
+#rt12:active {
+    background-color: rgb(240, 240, 240);
+}
+#rt12l {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    float: left;
+    border-radius: 3px;
+}
+#rt12r {
     font-weight: bold;
     font-size: 14px;
-    line-height: 32px;
+    line-height: 24px;
     float: left;
     color: rgb(0, 0, 0);
     font-family: SourceHanSansSC;
 }
-#rt14 {
+#rt13 {
     font-size: 14px;
     line-height: 32px;
     float: left;
     color: rgb(191, 191, 191);
     font-family: SourceHanSansSC;
 }
-#rt15 {
-    width: 20px;
-    height: 20px;
-    margin: 6px;
+#rt14 {
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
     float: left;
     border-radius: 3px;
 }
-#rt16 {
+#rt14:link {
+    background-color: rgb(255, 255, 255);
+}
+#rt14:visited {
+    background-color: rgb(255, 255, 255);
+}
+#rt14:hover {
+    background-color: rgb(240, 240, 240);
+}
+#rt14:active {
+    background-color: rgb(240, 240, 240);
+}
+#rt14l {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    float: left;
+    border-radius: 3px;
+}
+#rt14r {
     font-size: 14px;
-    line-height: 32px;
+    line-height: 24px;
     float: left;
     color: rgb(0, 0, 0);
     font-family: SourceHanSansSC;
@@ -105,6 +161,7 @@ body {
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    font-family: SourceHanSansSC;
 }
 #rb::-webkit-scrollbar {
     display: none;

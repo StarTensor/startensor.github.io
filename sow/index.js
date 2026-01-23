@@ -13,15 +13,15 @@ function rt11() {
         window.document.getElementById("r").style.width = "calc(100vw - 260px)";
         window.document.getElementById("rt1").style.width = "calc(100vw - 260px)";
         window.document.getElementById("rt2").style.width = "calc(100vw - 260px)";
-        window.document.getElementById("rb").style.width = "calc(100vw - 452px)";
-        window.document.getElementById("rb3").style.width = "min(384px, calc(100vw - 452px))";
+        window.document.getElementById("rb").style.width = "calc(100vw - 324px)";
+        window.document.getElementById("rb3").style.width = "min(384px, calc(100vw - 324px))";
     } else {
         lDisplay = false;
         window.document.getElementById("l").style.display = "none";
         window.document.getElementById("r").style.width = "100vw";
         window.document.getElementById("rt1").style.width = "100vw";
         window.document.getElementById("rt2").style.width = "100vw";
-        window.document.getElementById("rb").style.width = "calc(100vw - 192px)";
-        window.document.getElementById("rb3").style.width = "min(384px, calc(100vw - 192px))";
+        window.document.getElementById("rb").style.width = "calc(100vw - 64px)";
+        window.document.getElementById("rb3").style.width = "min(384px, calc(100vw - 64px))";
     }
 }
