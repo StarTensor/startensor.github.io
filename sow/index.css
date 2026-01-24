@@ -246,5 +246,6 @@ body {
     width: 256px;
 }
 #rbb {
-    height: 512px;
+    height: 256px;
+    float: left;
 }
