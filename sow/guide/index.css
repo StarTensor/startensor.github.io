@@ -22,6 +22,22 @@ body {
 }
 #l0 {
     height: 32px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 245, 245);
+}
+#l0:link {
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 245, 245);
+}
+#l0:visited {
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 245, 245);
+}
+#l0:hover {
+    color: rgb(192, 63, 63);
+    background-color: rgb(192, 63, 63, 0.15);
+}
+#l0:active {
     color: rgb(192, 63, 63);
     background-color: rgb(192, 63, 63, 0.15);
 }
@@ -33,27 +49,10 @@ body {
     border-radius: 3px;
 }
 #l0r {
-    font-weight: bold;
     float: left;
 }
 #l1 {
     height: 32px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(245, 245, 245);
-}
-#l1:link {
-    color: rgb(0, 0, 0);
-    background-color: rgb(245, 245, 245);
-}
-#l1:visited {
-    color: rgb(0, 0, 0);
-    background-color: rgb(245, 245, 245);
-}
-#l1:hover {
-    color: rgb(192, 63, 63);
-    background-color: rgb(192, 63, 63, 0.15);
-}
-#l1:active {
     color: rgb(192, 63, 63);
     background-color: rgb(192, 63, 63, 0.15);
 }
@@ -68,6 +67,7 @@ body {
     border-radius: 3px;
 }
 #l1r {
+    font-weight: bold;
     float: left;
 }
 #r {
@@ -197,90 +197,22 @@ body {
     font-size: 32px;
     font-weight: bold;
 }
-#rb1 {
-    width: 256px;
-    padding: 7px;
-    margin: 7px;
-    border-radius: 3px;
-    outline: solid 1px rgb(230, 230, 230);
-    float: left;
+#rbm {
+    margin-left: 7px;
 }
-#rb10 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 4px;
-    margin-bottom: 4px;
+#rbm p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-#rb11 {
-    width: 256px;
+#rbm div{
+    height: 32px;
 }
-#rb12 {
-    width: 256px;
-    text-align: center;
-}
-#rb12 p {
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-#rb121 {
-    width: 85px;
-    float: left;
-}
-#rb121t {
-    font-size: 14px;
-    color: rgb(127, 127, 127);
-}
-#rb121b {
-    font-size: 32px;
-    color: rgb(63, 127, 255);
-}
-#rb122 {
-    width: 85px;
-    float: left;
-}
-#rb122t {
-    font-size: 14px;
-    color: rgb(127, 127, 127);
-}
-#rb122b {
-    font-size: 32px;
-    color: rgb(127, 127, 127);
-}
-#rb123 {
-    width: 85px;
-    float: left;
-}
-#rb123t {
-    font-size: 14px;
-    color: rgb(127, 127, 127);
-}
-#rb123b {
-    font-size: 32px;
-    color: rgb(255, 63, 63);
-}
-#rb124 {
-    height: 66px;
-}
-#rb2 {
-    width: 256px;
-    padding: 7px;
-    margin: 7px;
-    border-radius: 3px;
-    outline: solid 1px rgb(230, 230, 230);
-    float: left;
-}
-#rb2t {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-#rb2b {
-    display: block;
-    width: 256px;
-}
-#rb2b0 {
-    width: 256px;
+#rbm hr {
+    border: 0;
+    height: 1px;
+    background-color: rgb(230, 230, 230);
 }
 #rbb {
     height: 256px;
