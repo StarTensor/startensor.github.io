@@ -17,6 +17,9 @@ body {
     background-color: rgb(245, 245, 245);
     font-family: SourceHanSansSC;
 }
+#l a {
+    display: block;
+}
 #l0 {
     height: 32px;
     color: rgb(127, 63, 255);
@@ -31,6 +34,40 @@ body {
 }
 #l0r {
     font-weight: bold;
+    float: left;
+}
+#l1 {
+    height: 32px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 245, 245);
+}
+#l1:link {
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 245, 245);
+}
+#l1:visited {
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 245, 245);
+}
+#l1:hover {
+    color: rgb(127, 63, 255);
+    background-color: rgb(127, 63, 255, 0.15);
+}
+#l1:active {
+    color: rgb(127, 63, 255);
+    background-color: rgb(127, 63, 255, 0.15);
+}
+#l1l {
+    width: 20px;
+    height: 20px;
+    margin-left: 38px;
+    margin-right: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    float: left;
+    border-radius: 3px;
+}
+#l1r {
     float: left;
 }
 #r {
