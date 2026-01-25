@@ -1,7 +1,3 @@
-@font-face {
-    font-family: SourceHanSansSC;
-    src: url("/SourceHanSansSC-Regular-2.otf");
-}
 body {
     margin: 0;
     width: 100vw;
@@ -15,7 +11,7 @@ body {
     font-size: 14px;
     line-height: 32px;
     background-color: rgb(245, 245, 245);
-    font-family: SourceHanSansSC;
+    font-family: 'zh quote',-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans','Noto Sans CJK SC','Microsoft YaHei UI','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 }
 #l a {
     display: block;
@@ -121,14 +117,14 @@ body {
     line-height: 24px;
     float: left;
     color: rgb(0, 0, 0);
-    font-family: SourceHanSansSC;
+    font-family: 'zh quote',-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans','Noto Sans CJK SC','Microsoft YaHei UI','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 }
 #rt13 {
     font-size: 14px;
     line-height: 32px;
     float: left;
     color: rgb(191, 191, 191);
-    font-family: SourceHanSansSC;
+    font-family: 'zh quote',-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans','Noto Sans CJK SC','Microsoft YaHei UI','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 }
 #rt14 {
     height: 24px;
@@ -163,7 +159,7 @@ body {
     line-height: 24px;
     float: left;
     color: rgb(0, 0, 0);
-    font-family: SourceHanSansSC;
+    font-family: 'zh quote',-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans','Noto Sans CJK SC','Microsoft YaHei UI','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 }
 #rt2 {
     height: 192px;
@@ -187,7 +183,7 @@ body {
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    font-family: SourceHanSansSC;
+    font-family: 'zh quote',-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans','Noto Sans CJK SC','Microsoft YaHei UI','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 }
 #rb::-webkit-scrollbar {
     display: none;
