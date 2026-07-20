@@ -1174,6 +1174,51 @@ img { max-width: 100%; }
     fill: var(--text-white);
 }
 
+/* === Custom Waifu Toggle Button === */
+.waifu-custom-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 0.7rem;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+.waifu-custom-btn:hover {
+    border-color: var(--accent-blue);
+    transform: scale(1.08);
+}
+.waifu-custom-btn:active {
+    transform: scale(0.95);
+}
+/* ON 状态：绿色 */
+.waifu-custom-btn.on {
+    background: rgba(63, 185, 80, 0.15);
+    border-color: var(--accent-green);
+    color: var(--accent-green);
+    box-shadow: 0 4px 20px rgba(63, 185, 80, 0.25);
+}
+/* OFF 状态：灰色 */
+.waifu-custom-btn.off {
+    background: rgba(139, 148, 158, 0.1);
+    border-color: var(--text-tertiary);
+    color: var(--text-tertiary);
+}
 @media (max-width: 768px) {
     #waifu {
         transform: scale(0.7) translateY(25px);

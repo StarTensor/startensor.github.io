@@ -368,16 +368,59 @@ function initCanvasVideo() {
 /* === Live2D Widget === */
 function initLive2D() {
     if (typeof initWidget !== 'function') {
-        console.warn('Live2D: initWidget not available');
+        setTimeout(initLive2D, 300);
         return;
     }
 
+    // 清除可能残留的 quit 状态，确保 waifu 一定会被创建
+    localStorage.removeItem('waifu-display');
+    localStorage.removeItem('waifu-disabled');
+
+    // 始终创建 waifu
     initWidget({
         waifuPath: 'https://cdn.jsdelivr.net/npm/live2d-widgets@1.0.1/dist/waifu-tips.json',
         cdnPath: 'https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/',
         cubism2Path: 'https://cdn.jsdelivr.net/npm/live2d-widgets@1.0.1/dist/live2d.min.js',
-        tools: ['hitokoto', 'asteroids', 'switch-model', 'switch-texture', 'photo', 'info', 'quit'],
+        tools: ['hitokoto', 'switch-model', 'switch-texture', 'photo', 'info', 'quit'],
         logLevel: 'warn',
         drag: false,
     });
+
+    // 自定义 ON/OFF 圆形按钮（仅 ≤900px 可见）
+    initWaifuToggle();
+}
+
+function initWaifuToggle() {
+    var btn = document.getElementById('waifu-custom-toggle');
+    if (!btn) return;
+
+    // 初始状态：≤900px 默认 OFF；>900px 始终显示（按钮 CSS 隐藏）
+    var isOn = window.innerWidth > 900;
+    // 立即应用初始状态，不等待 waifu 加载
+    btn.textContent = isOn ? 'ON' : 'OFF';
+    btn.className = 'waifu-custom-btn ' + (isOn ? 'on' : 'off');
+
+    function updateState() {
+        var waifu = document.getElementById('waifu');
+        btn.textContent = isOn ? 'ON' : 'OFF';
+        btn.className = 'waifu-custom-btn ' + (isOn ? 'on' : 'off');
+        if (waifu) {
+            waifu.style.display = isOn ? '' : 'none';
+        }
+    }
+
+    btn.addEventListener('click', function () {
+        isOn = !isOn;
+        updateState();
+    });
+
+    // 等 waifu 加载完成后同步显示/隐藏
+    (function wait(n) {
+        var waifu = document.getElementById('waifu');
+        if (waifu && waifu.classList.contains('waifu-active')) {
+            if (!isOn) waifu.style.display = 'none';
+            return;
+        }
+        if (n < 600) setTimeout(function () { wait(n + 1); }, 200);
+    })(0);
 }
