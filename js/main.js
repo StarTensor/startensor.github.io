@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeatmap();
     initRepoSearch();
     initOverviewTyping();
-    initOverviewStats();
     initCanvasVideo();
     initLive2D();
 });
@@ -314,47 +313,6 @@ function initOverviewTyping() {
         setTimeout(tick, delay);
     }
     setTimeout(tick, 600);
-}
-
-/* === Overview Stats Counter === */
-function initOverviewStats() {
-    const items = document.querySelectorAll('.nb-stat-item[data-target]');
-    if (!items.length) return;
-    
-    // Build inner HTML for stats (once)
-    items.forEach(item => {
-        const target = item.getAttribute('data-target');
-        const icon = item.getAttribute('data-icon') || '';
-        const label = item.getAttribute('data-label') || '';
-        const suffix = item.getAttribute('data-suffix') || '';
-        item.innerHTML = '<span class="nb-stat-icon">' + icon + '</span>' +
-            '<span class="nb-stat-num">0' + suffix + '</span>' +
-            '<span class="nb-stat-label">' + label + '</span>';
-    });
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const el = entry.target;
-                const target = parseInt(el.getAttribute('data-target'));
-                const suffix = el.getAttribute('data-suffix') || '';
-                const numEl = el.querySelector('.nb-stat-num');
-                if (!numEl) return;
-                const duration = 1200;
-                const startTime = performance.now();
-                function update(now) {
-                    const p = Math.min((now - startTime) / duration, 1);
-                    const eased = 1 - Math.pow(1 - p, 3);
-                    numEl.textContent = Math.floor(eased * target) + suffix;
-                    if (p < 1) requestAnimationFrame(update);
-                    else numEl.textContent = target + suffix;
-                }
-                requestAnimationFrame(update);
-                observer.unobserve(el);
-            }
-        });
-    }, { threshold: 0.4 });
-    items.forEach(item => observer.observe(item));
 }
 
 /* === Matrix Code Rain Canvas === */
