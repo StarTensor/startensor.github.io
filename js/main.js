@@ -373,9 +373,9 @@ function initLive2D() {
     }
 
     initWidget({
-        waifuPath: 'https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.1/dist/waifu-tips.json',
-        cdnPath: 'https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/',
-        cubism2Path: 'https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.1/dist/live2d.min.js',
+        waifuPath: 'https://cdn.jsdelivr.net/npm/live2d-widgets@1.0.1/dist/waifu-tips.json',
+        cdnPath: 'https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/',
+        cubism2Path: 'https://cdn.jsdelivr.net/npm/live2d-widgets@1.0.1/dist/live2d.min.js',
         tools: ['hitokoto', 'asteroids', 'switch-model', 'switch-texture', 'photo', 'info', 'quit'],
         logLevel: 'warn',
         drag: false,
