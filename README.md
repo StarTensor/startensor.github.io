@@ -35,10 +35,9 @@ My personal homepage — a GitHub dark-themed profile page built with vanilla HT
 ├── js/
 │   └── main.js         # Interactive features (8 modules)
 ├── images/
-│   ├── avatar-real.png # GitHub avatar
-│   └── avatar.svg      # SVG avatar
+│   └── avatar-real.webp # GitHub avatar (WebP)
 ├── audio/
-│   └── 星祭回路.wav    # Background music
+│   └── 星祭回路.mp3     # Background music
 └── README.md
 ```
 
